@@ -1,0 +1,417 @@
+/* Start Variables */
+:root {
+    --main-color : #8DA58F;
+    --second-color: #E84526;
+    --third-color: #FCF7ED;
+    --transit-color: #FBB800;
+  }
+/* End Variables */
+/* Start Global Rules */
+  @font-face {
+    font-family:"Bukhari Script";
+    src: url("/font/BukhariScript.ttf") format("truetype");
+  }
+  @font-face {
+    font-family:"Noot";
+    src: url("/font/Noot.otf") format("truetype");
+  }
+  *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Bukhari Script";
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* End Global Rules */
+  /* Start navbar */
+.header{
+    background-image: url("/img/background1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+.header .container{
+    align-items: center;
+    padding: 0 10%;
+    background-color: transparent;
+}
+.header ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.header .logo{
+    width: 12.5%;
+}
+.header ul{
+    margin: 0;
+}
+.header ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25em;
+}
+.header ul li a:hover {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.3em;
+}
+/* End nav bar*/
+/* Start Home page */
+.Home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Home .left .p1{
+    color: var(--second-color);
+    font-size: 5.5em;
+    transform: rotate(-18deg);
+    text-shadow: 1px 2px 4px black;
+    padding-left: 30%;
+}
+.Home .left .p1 .span1{
+    margin-left: 15%;
+}
+.Home .left .p1 .span2{
+    margin-left: 5%;
+}
+.Home .left .p2{
+    font-size: 1.5em;
+    transform: rotate(-12deg);
+    margin-top: 8%;
+    padding-left: 32%;
+}
+.Home .left img{
+    margin-top: -10%;
+    width: 100%;
+    padding-left: 32%;
+}
+ /* Small */
+ @media (max-width: 768px) {
+    .header .logo{
+        width: 30%;
+    }
+    .header ul li a {
+        font-size: 0.85em;
+    }
+    .header ul li a:hover {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3em;
+    }
+    .Home {
+        display: block;
+    }
+    .Home .left .p1{
+        font-size: 4em;
+        padding-left: 100px;
+        transform: rotate(0deg);
+    }
+    .Home .left .p1 .span1{
+        margin-left: 15%;
+    }
+    .Home .left .p1 .span2{
+        margin-left: 8%;
+    }
+    .Home .left .p2{
+        font-size: 1em;
+        transform: rotate(0deg);
+        margin-top: 4%;
+        padding-left: 25%;
+    }
+    .Home .left img{
+        display: none;
+    }
+    .Home .right img {
+        width: 95%;
+        margin-left: 2%;
+    }
+  }
+  /* Medium */
+  @media (max-width: 992px ) and (min-width: 769px) {
+    .Home {
+        display: block;
+    }
+    .Home .left .p1{
+        font-size: 4.5em;
+        padding-left: 306px;
+        padding-top: 5%;
+        transform: rotate(0deg);
+    }
+    .Home .left .p1 .span1{
+        margin-left: 10%;
+    }
+    .Home .left .p1 .span2{
+        margin-left: 5%;
+    }
+    .Home .left .p2{
+        font-size: 2em;
+        transform: rotate(0deg);
+        margin-top: 5%;
+        padding-left: 28%;
+    }
+    .Home .left img{
+        display: none;
+    }
+    .Home .right img {
+        width: 95%;
+        margin-left: 2%;
+    }
+  }
+  .header .goto{
+    width: 70px;
+    height: 50px;
+    background-color: var(--main-color);
+    text-decoration: none;
+    text-align: center;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    margin-left: calc((100% - 70px) / 2);
+  }
+ .header .goto a{
+   color: var(--third-color);
+   animation: animate1 3s linear infinite;  
+   position: absolute; 
+   margin-left: -9px;
+ }
+  @keyframes animate1{
+    0%  
+     { opacity: 1;
+    }
+    50%  
+    { opacity: 1;
+   }
+    100%   { opacity: .5;
+    margin-top: 40px;}
+    } 
+/* End Home page */
+/* Start Menu */
+.menu {
+    background-image: url("/img/background2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5%;
+}
+.menu .container .firstpart{
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    padding-top: 5%;
+}
+.menu .container .firstpart h1{
+    font-family: "Noot";
+    color: var(--transit-color);
+    font-size: 3.5em;
+}
+.menu .container .firstpart p{
+    margin-bottom: 5%;
+}
+.menu .container .firstpart a{
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: var(--transit-color);
+    color: white;
+    border-radius: 9%;
+}
+.menu .container .firstpart a:hover{
+    padding: 17px 32px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.menu .container .secondpart h2{
+    color: var(--second-color);
+    font-size: 3.5em;
+    text-shadow: 1px 2px 4px black;
+    text-align:center;
+    margin-top: 8%;
+}
+.menu .container .secondpart .menulist {
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 5%;
+
+}
+.menu .container .secondpart .menulist div {
+    background-color: var(--third-color);
+    text-align: center;
+    padding: 5%;
+}
+.menu .container .secondpart p{
+    margin-top: 4%;
+}
+.menu .container .secondpart p span{
+    font-weight: bolder;
+}
+.menu .container .secondpart .menulist div img {
+    width: 50%;
+}
+/* End Menu */
+/* Start Meet */
+.meet {
+    background-image: url("/img/background1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 8%;
+}
+.meet .left img{
+    width: 120%;
+}
+.meet .right {
+    text-align: center;
+}
+.meet .right h1{
+    font-family: "Noot";
+    color: var(--transit-color);
+    font-size: 3.5em;
+    margin-bottom: 15%;
+}
+.meet .right a{
+    text-decoration: none;
+    padding: 20px 30px;
+    background-color: var(--transit-color);
+    color: white;
+    border-radius: 10%;
+}
+.meet .right a:hover{
+    padding: 22px 32px;
+    color: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 768px) {
+    .meet { 
+        padding-bottom: 15%;
+    }
+    .menu .left img {
+        width: 30%;
+    }
+}
+/* End Meet */
+/* Start Order and delivery */
+.order{
+    background-image: url("/img/background2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5%;
+}
+.order .orderdiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 8%;
+}
+.order .orderdiv .left {
+    width: 30%;
+    text-align: center;
+}
+.order .orderdiv .left h1 {
+    font-family: "Noot";
+    color: var(--transit-color);
+    font-size: 3.5em;
+    margin-bottom: 5%;
+}
+.order .gotoup{
+    width: 60px;
+    height: 60px;
+    background-color: var(--third-color);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px;
+    margin-left: calc(100% - 90px);
+}
+.order .gotoup a{
+    color: black;
+    animation: animate 3s linear infinite;  
+    position: absolute;
+    margin-top: 35px;
+    margin-left: -8px;
+}
+@keyframes animate{
+   0%  
+    { opacity: 1;
+   }
+   50%  
+   { opacity: 1;
+  }
+   100%   { opacity: .5;
+   margin-top: 0px;}
+   }
+@media (max-width: 768px) {
+    .order .orderdiv .left {
+        width: 60%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+}
+/* End Order and delivery */
+/* Start Footer */
+.footer {
+    background-color: var(--third-color);
+    text-align: center;
+    padding-top: 2.5%;
+}
+.footer .container .first img{
+    width: 10%;
+    margin-bottom: 2%;
+}
+.footer .container .first p{
+    margin-bottom: 2%;
+}
+.footer .container .second {
+    margin-bottom: 5%;
+}
+.footer .container .second a{
+    color: black;
+}
+.footer .container .second a:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+.footer .container .third p{
+    font-family:"Courier New', Courier, monospace";
+    font-size: 0.8em;
+
+}
+/* End footer */
+
+
+
+
+
+
+
